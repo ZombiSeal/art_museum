@@ -1,0 +1,166 @@
+
+.header {
+    width: 100%;
+    padding: 0 15px;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10; 
+}
+
+.header_nav {
+    display: flex;
+    align-items: center;
+}
+
+.header_menu {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 2% 0;
+}
+
+
+.menu_icon {
+    display: none;
+}
+
+
+.header_list {
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.header_link {
+    transition: .5s;
+}
+
+.header_link:hover{
+    color: #9D8665;
+    transition: 0.5s;
+}
+
+
+.logo img{
+    width: 70px;
+}
+
+.logo {
+    transition: .5s;
+}
+
+.logo:hover {
+    filter: invert(57%) sepia(10%) saturate(1243%) hue-rotate(356deg) brightness(94%) contrast(81%);
+    transition: 0.5s;
+}
+
+
+@media (max-width: 1023px) {
+
+
+    .menu_icon {
+        z-index: 5;
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 18px;
+        cursor: pointer;
+        align-self: center;
+    }
+
+    .menu_icon span,
+    .menu_icon::before,
+    .menu_icon::after{
+        left: 0;
+        position:absolute;
+        height: 10%;
+        width: 100%;
+        transition: .5s;
+        background-color: #fff;
+    }
+
+    .menu_icon::before,
+    .menu_icon::after{
+        content: "";
+    }
+
+    .menu_icon::before{
+        top: 0;
+    }
+
+    .menu_icon::after{
+        bottom: 0;
+    }
+
+    .menu_icon span {
+        top: 50%;
+        transform: scale(1) translate(0,-50%);
+    }
+
+    .menu_icon.active span {
+        transform: scale(0) translate(0,-50%);
+    }
+
+    .menu_icon.active::before{
+        top: 50%;
+        transform: rotate(-45deg) translate(0px, -50%);
+    }
+
+    .menu_icon.active::after{
+        bottom: 50%;
+        transform: rotate(45deg) translate(0px, 50%);
+    }
+
+    .logo {
+        z-index: 1;
+    }
+
+    .logo img {
+        width: 60px;
+    }
+
+
+    .header_nav {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 70%;
+        background-color: #000;
+        padding: 100px 30px 30px 30px;
+        transition: left .5s;
+        overflow-x: hidden ;
+        overflow-y: auto;
+    }
+
+    .header_nav.active {
+        left: 0;
+    }
+
+    .header_nav::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 70px;
+        background-color: #000;
+        z-index: 3;
+    }
+
+    .header_list {
+        display: block;
+    }
+
+    .header_item {
+        margin: 0 0 25px 0;
+    }
+
+    .header_item:last-child {
+        margin-bottom: 0;
+    }
+}

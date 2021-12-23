@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400&family=Open+Sans:wght@300&display=swap');
+
+iframe {
+  width: 100%;
+  text-align: center;
+
+}
+
+AUTHOR {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+FIO, 
+SPEC,
+YEAR  {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    color: #fff;
+}
+
+@media (max-width: 767px) {
+    FIO, 
+    SPEC,
+    YEAR {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 419px) {
+    FIO, 
+    SPEC,
+    YEAR {
+        font-size: 12px;
+    }
+}

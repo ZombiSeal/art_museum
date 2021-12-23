@@ -1,0 +1,88 @@
+.parallax {
+    background-image: url('../assets/img/line.jpg');
+    height: 400px; 
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.contacts .line {
+    width: 100%;
+}
+
+
+.contacts_info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info_list_container {
+    max-width: 100%;
+}
+
+.social_network {
+    width: 35%;
+}
+
+.adress,
+.phone {
+    margin-bottom: 15px;
+}
+
+
+.info_list span {
+    font-weight: bolder;
+    margin-right: 15px;
+}
+
+.social_network div {
+    font-weight: 400;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.icon_list {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+}
+
+
+.icon_item:first-child {
+    margin-left: 0;
+}
+
+.icon_link img {
+    width: 30px;
+    height: 30px;
+}
+
+.icon_link {
+    transition: .5s;
+}
+
+.icon_link:hover {
+    filter: invert(55%) sepia(31%) saturate(381%) hue-rotate(356deg) brightness(92%) contrast(88%);
+    transition: .5s;
+}
+
+
+@media (max-width: 767px) {
+    .contacts_info {
+        flex-direction: column;
+    }
+
+    .social_network {
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    .social_network div {
+        text-align: center;
+    }
+}

@@ -1,0 +1,283 @@
+.tickets{
+width: 100%;
+background-color: #000;
+
+}
+
+
+.tickets .line {
+    width: 50%;
+}
+
+.tickets h3{
+    color: #fff;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.tickets_info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.radio_buttom {
+    color: #fff;
+}
+
+.form_radio {
+    margin-top: 20px;
+}
+
+
+
+.form_radio input[type=radio] {
+    display: none;
+}   
+
+.form_radio label {
+    display: inline-block;
+    line-height: 1;
+    cursor: pointer;
+    color: #fff;
+    user-select: none;
+    font-size: 24px;
+}
+
+.form_radio label:first-child {
+    margin-top: 20px;
+}
+
+.form_radio label:before {
+    content: "";
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    right: 15px;;
+    position: relative;
+    background: url("../assets/svg/radio-big.svg") 0 0 no-repeat;
+}
+
+.form_radio input[type=radio]:checked + label:before {
+    background: url("../assets/svg/radio-checked.svg") 0 0 no-repeat;
+}
+
+.row {
+    text-align: center;
+    max-width: 100%;
+  }
+  
+  .number {
+    display: inline-block;
+    position: relative;
+    max-width: 100%;
+  }
+  .number input[type="number"] {
+    display: block;
+    height: 50px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 3px solid #fff;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;    
+    line-height: 26px;
+    -moz-appearance: textfield;
+  }
+  .number input[type="number"]::-webkit-outer-spin-button,
+  .number input[type="number"]::-webkit-inner-spin-button {
+    display: none;
+    
+  }
+  .number-minus{
+    position: absolute;
+    top: 0;
+    margin: 0;
+    left: 0;
+    bottom: 0;
+    width: 25%;
+    display: block;
+    border: 3px solid #fff;
+    border-right: none;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 38px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    background-color: #000;
+  }
+  .number-plus {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 25%;
+    padding: 0;
+    display: block;
+    border: 3px solid #fff;
+    border-left: none;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 38px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    background-color: #000;
+}
+
+
+
+.form_second p {
+    font-size: 24px;
+    line-height: 50px;
+    cursor: pointer;
+    color: #fff;
+    user-select: none;
+}
+
+.form_second a {
+    text-align: center;
+    max-width: 200px;
+    padding: 7% 20%;
+    font-size: 24px;
+    background-color: #710707;
+}
+
+.form_second a:hover {
+    background-color: #9D8665;
+    transition: 0.5s;
+}
+
+
+.img_line {
+    width: 100%;
+}
+
+.sum_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    /* max-width: 85%; */
+}
+
+
+.img_ticket_container {
+    padding-right: 20px ;
+    max-width: 50%;
+}
+
+.img_ticket_container img {
+    max-width: 100%;
+}
+
+.form_first_container {
+    max-width: 30%;
+    padding: 0 10px;
+}
+
+.form_second_container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    max-width: 20%;
+    padding-left:10px;
+}
+
+.form_second {
+    max-width: 85%;
+}
+
+.buy_tickets_min {
+    display: none;
+}
+
+@media (max-width: 1023px) {
+
+    .tickets h3{
+        font-size: 28px;
+    }
+
+    .form_second p
+    {
+        font-size: 22px;
+    }
+
+    .form_first_container {
+        display: none;
+ 
+    }
+
+    .form_second_container {
+        max-width: 40%;
+    }
+
+    .img_ticket_container {
+        max-width: 70%;
+    }
+
+    .buy_tickets {
+        display: none;
+    }
+
+    .buy_tickets_min {
+        display: block;
+    }
+
+    
+}
+
+@media (max-width: 767px) {
+
+    .tickets h3{
+        font-size: 24px;
+    }
+
+    .form_second p
+    {
+        font-size: 18px;
+    }
+
+    .tickets .line {
+        width: 100%;
+    }
+
+    .tickets_info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img_ticket_container {
+        max-width: 100%;
+        padding: 20px 0;
+    }
+
+    .form_second_container {
+        max-width: 100%;
+        align-items: center;
+        padding: 0;
+    }
+
+
+}
+
+@media (max-width: 419px) {
+    .tickets h3 {
+        font-size: 16px;
+    }
+
+    .form_second p
+    {
+        font-size: 14px;
+    }
+}

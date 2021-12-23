@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+    font-weight: 300;
+}
+
+h1,
+h2 {
+    max-width: 100%;
+    font-family: 'Caveat', cursive;
+    font-size: 80px;
+    font-style: normal;
+    font-weight:normal;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+h3 {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    letter-spacing: 1px;
+    color: #000000;
+}
+.about_us h2, 
+.news h2, 
+.contacts h2 {
+    color: #9D8665;
+}
+
+.header_container{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.welcome_container,
+.about_us_container,
+.gallery_container,
+.news_container,
+.tickets_container,
+.contacts_container,
+.footer_container,
+.footer_info_container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 10% 15px;
+}
+
+li {
+    list-style: none;
+
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+
+@media (max-width: 1023px) {
+    h1,
+    h2 {
+        font-size: 60px;
+    }
+
+    h3 {
+        font-size: 36px;
+    }
+
+    p,
+    a,
+    li{
+        font-size: 24px;
+    }
+
+   
+}
+
+@media (max-width: 767px){
+    
+   h1, 
+   h2 {
+       font-size: 40px;
+   }
+
+   p,
+   a,
+   li{
+       font-size: 18px;
+   }
+
+   h3 {
+       font-size: 28px;
+   }
+
+}
+
+@media (max-width: 419px){
+    
+    h1, 
+    h2 {
+        font-size: 28px;
+    }
+ 
+    p,
+    a,
+    li{
+        font-size: 14px;
+    }
+    h3 {
+        font-size: 16px;
+    }
+
+}

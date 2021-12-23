@@ -1,0 +1,99 @@
+.welcome_inf,
+.welcome_img {
+    opacity: 0;
+    transition: 2.5s;
+}
+
+.welcome_inf.active,
+.welcome_img.active {
+    opacity: 1;
+}
+
+.about_us_info {
+    opacity: 0;
+    transform: translate(-5%, 0px);
+}
+
+.about_us_info.active {
+    opacity: 1;
+    transform: translate(0, 0);
+    transition: 2s;
+}
+
+.img_container {
+    opacity: 0;
+    transform: translate(5%, 0px);
+}
+
+.img_container.active {
+    opacity: 1;
+    transform: translate(0, 0);
+    transition: 2s;
+}
+
+.grid_item1,
+.grid_item2,
+.grid_item3,
+.grid_item4{
+    opacity: 0;
+    transform: translate(5%, 0px);
+}
+
+.grid_item1.active,
+.grid_item8.active {
+    opacity: 1;
+    transform: translate(0, 0);
+    transition: 0.5s;
+}
+
+.grid_item2.active,
+.grid_item7.active {
+    opacity: 1;
+    transform: translate(0, 0);
+    transition: 1.2s;
+}
+
+.grid_item3.active,
+.grid_item6.active{
+    opacity: 1;
+    transform: translate(0, 0);
+    transition: 1.9s;
+}
+.grid_item4.active,
+.grid_item5.active {
+    opacity: 1;
+    transform: translate(0, 0);
+    transition: 2.4s;
+}
+
+.grid_item5,
+.grid_item6,
+.grid_item7,
+.grid_item8 {
+    opacity: 0;
+    transform: translate(-5%, 0px);
+}
+
+.news_link {
+    opacity: 0;
+}
+
+.news_link.active {
+    opacity: 1;
+    transition: 2s;
+}
+
+.more_news .news_link {
+    opacity: 1;
+}
+
+.tickets_info {
+    opacity: 0;
+    transform: translate(0, 10%);
+}
+
+.tickets_info.active {
+    opacity: 1;
+    transform: translate(0, 0);
+    transition: 2s;
+}

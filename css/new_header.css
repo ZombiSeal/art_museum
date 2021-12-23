@@ -1,0 +1,29 @@
+.header {
+    width: 100%;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    z-index: 1; 
+}
+
+.header_container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 2% 0;
+}
+
+.logo img{
+    width: 70px;
+}
+
+.logo:hover {
+    filter: invert(57%) sepia(10%) saturate(1243%) hue-rotate(356deg) brightness(94%) contrast(81%);
+    transition: 0.5s;
+}
+
+@media (max-width: 1023px) {
+    .logo img {
+        width: 60px;
+    }
+}
